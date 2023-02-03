@@ -1,0 +1,83 @@
+:root {
+  --font-fenix: "Fenix", serif;
+  --font-arima: "Arima Madurai", cursive;
+  --color-biru: var(--bs-blue);
+}
+
+* {
+  font-family: var(--font-fenix);
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.text-inti {
+  font-family: var(--font-arima);
+  color: var(--bs-blue);
+  font-weight: 600;
+}
+
+.text-point {
+  color: var(--bs-blue);
+  font-weight: 500;
+}
+
+.icon-sosmed {
+  font-size: 30px;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: var(--color-biru);
+}
+.navbar-brand {
+  font-size: 1.5em;
+  font-family: var(--font-arima);
+}
+.nav-item {
+  margin-left: 3px;
+  margin-bottom: 3px;
+}
+.nav-item .nav-link {
+  font-size: 1.1em;
+}
+
+/* HERO */
+.Hero {
+  height: 95vh;
+}
+
+section {
+  min-height: 200px;
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+
+.lambai {
+  display: inline-block;
+  font-size: 18px;
+  transform-origin: bottom right;
+  animation: myAnimation 1s ease-in-out infinite;
+}
+
+footer {
+  background-color: var(--color-biru);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* ANIMATION */
+@keyframes myAnimation {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
