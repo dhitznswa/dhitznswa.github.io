@@ -1,0 +1,22 @@
+[
+  {
+    "uniq": "GI-1",
+    "url": "assets/img/Galery/backend.PNG",
+    "alt": "Backend"
+  },
+  {
+    "uniq": "GI-2",
+    "url": "assets/img/Galery/frontend.PNG",
+    "alt": "Frontend"
+  },
+  {
+    "uniq": "GI-3",
+    "url": "assets/img/Galery/jsdasar.PNG",
+    "alt": "JS Dasar"
+  },
+  {
+    "uniq": "GI-4",
+    "url": "assets/img/Galery/pemweb.PNG",
+    "alt": "Pemrograman Web"
+  }
+]

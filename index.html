@@ -43,7 +43,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" href="#about">Tentang</a>
             </li>
@@ -60,41 +60,18 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
-          <span class="navbar-text">
-            <div class="btn-group">
-              <button
-                class="btn btn-sm dropdown-toggle text-white disabled"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Theme
-              </button>
-              <ul class="dropdown-menu">
-                <li>
-                  <button class="dropdown-item" type="button">Light</button>
-                </li>
-                <li>
-                  <button class="dropdown-item" type="button">Dark</button>
-                </li>
-                <hr />
-                <li>
-                  <button class="dropdown-item" type="button">System</button>
-                </li>
-              </ul>
-            </div>
-          </span>
         </div>
       </div>
     </nav>
     <!-- NAVBAR END -->
 
     <!-- HERO START -->
-    <div class="Hero d-flex align-items-center">
+    <div class="Hero d-flex align-items-center mt-5">
       <div class="container">
         <div class="row">
           <div
             class="col-lg-6 d-flex align-items-center px-3 px-lg-0 order-2 order-lg-1"
+            data-aos="fade-right"
           >
             <div class="">
               <h6 class="fw-bold">
@@ -102,23 +79,24 @@
                 <span class="lambai">👋</span>
                 , Saya
               </h6>
-              <h2 class="text-inti" data-aos="fade-right">Adhitya Nasuwa</h2>
+              <h2 class="text-inti">
+                <span class="hero-text text-inti"></span>
+              </h2>
               <h6 class="my-3">
                 Website ini merupakan wadah untuk menampilkan kemampuan dan
                 prestasi yang saya capai selama ini. Melalui website ini, saya
-                ingin menunjukkan bakat dan minat saya kepada dunia, serta
                 memberikan gambaran tentang siapa saya sebagai individu.
               </h6>
               <button class="btn btn-info my-3 mx-auto">Contact Me</button>
             </div>
           </div>
           <div
-            class="col-lg-6 text-center d-flex align-items-center justify-content-center justify-content-lg-end order-1 order-lg-2 mb-3"
+            class="col-lg-6 text-center d-flex align-items-center justify-content-center justify-content-lg-end order-1 order-lg-2 mb-3 mt-5"
           >
             <img
+              class="hero-image"
               src="assets/img/port.svg"
               alt="adhitya nasuwa"
-              width="90%"
               data-aos="zoom-in"
             />
           </div>
@@ -311,36 +289,9 @@
             <p>Section ini mencakup foto-foto penghargaan yang saya punya</p>
           </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
-          <div class="col" data-aos="zoom-in">
-            <img
-              src="assets/img/Galery/backend.PNG"
-              alt="Backend"
-              class="img-thumbnail img-fluid shadow"
-            />
-          </div>
-          <div class="col" data-aos="zoom-in">
-            <img
-              src="assets/img/Galery/frontend.PNG"
-              alt="Frontend"
-              class="img-thumbnail img-fluid shadow"
-            />
-          </div>
-          <div class="col" data-aos="zoom-in">
-            <img
-              src="assets/img/Galery/jsdasar.PNG"
-              alt="JS Dasar"
-              class="img-thumbnail img-fluid shadow"
-            />
-          </div>
-          <div class="col" data-aos="zoom-in">
-            <img
-              src="assets/img/Galery/pemweb.PNG"
-              alt="Pemrograman Web"
-              class="img-thumbnail img-fluid shadow"
-            />
-          </div>
-        </div>
+        <div
+          class="row row-cols-1 row-cols-md-3 g-4 justify-content-center galery-box"
+        ></div>
       </div>
     </section>
     <!-- GALERY END -->
@@ -460,10 +411,20 @@
     ></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/data.js"></script>
     <script>
       AOS.init({
         duration: 500,
+      });
+      var typed = new Typed(".hero-text", {
+        // Waits 1000ms after typing "First"
+        strings: ["Adhitya Nasuwa", "Freelancer", "Pelajar Aktif"],
+        loop: true,
+        startAfter: 500,
+        typeSpeed: 100,
+        cursorChar: " |",
       });
     </script>
     <script></script>

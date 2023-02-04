@@ -5,6 +5,17 @@ const tooltipList = [...tooltipTriggerList].map(
   (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
 );
 
+window.onscroll = function () {
+  const header = document.querySelector(".navbar");
+  const fixedNav = header.offsetTop;
+
+  if (window.pageYOffset > fixedNav) {
+    header.classList.add("navbar-active");
+  } else {
+    header.classList.remove("navbar-active");
+  }
+};
+
 // COntact Us
 
 (() => {

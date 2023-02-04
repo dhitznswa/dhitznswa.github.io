@@ -42,12 +42,12 @@ body {
   margin-bottom: 3px;
 }
 .nav-item .nav-link {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 /* HERO */
 .Hero {
-  height: 95vh;
+  min-height: 95vh;
 }
 
 section {
@@ -67,6 +67,16 @@ footer {
   background-color: var(--color-biru);
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.hero-image {
+  width: 80%;
+}
+
+@media (min-width: 992px) {
+  .hero-image {
+    width: 90%;
+  }
 }
 
 /* ANIMATION */
