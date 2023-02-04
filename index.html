@@ -357,35 +357,57 @@
         </div>
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <form>
+            <form name="form-contact-me" class="needs-validation" novalidate>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nama"
+                  placeholder="Your Name"
+                  name="dhitz-nama"
+                  required
+                  autocomplete="off"
+                />
+                <label for="nama">Nama Lengkap</label>
+              </div>
               <div class="form-floating mb-3">
                 <input
                   type="email"
                   class="form-control"
-                  id="floatingInput"
-                  placeholder="name@example.com"
+                  id="email"
+                  placeholder="Email Address"
+                  name="dhitz-email"
+                  required
+                  autocomplete="off"
                 />
-                <label for="floatingInput">Email address</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="floatingPassword"
-                  placeholder="Password"
-                />
-                <label for="floatingPassword">Password</label>
+                <label for="email">Email Address</label>
               </div>
               <div class="form-floating mb-4">
                 <textarea
                   class="form-control"
                   placeholder="Leave a comment here"
-                  id="floatingTextarea"
+                  id="message"
+                  name="dhitz-message"
+                  style="height: 100px"
+                  required
+                  autocomplete="off"
                 ></textarea>
-                <label for="floatingTextarea">Comments</label>
+                <label for="message">Message</label>
               </div>
-              <button type="submit" class="btn btn-primary float-end">
+              <button type="submit" class="btn btn-primary float-end btn-kirim">
                 Kirim <i class="fa-regular fa-paper-plane ms-2"></i>
+              </button>
+              <button
+                class="btn btn-primary float-end btn-loading d-none"
+                type="button"
+                disabled
+              >
+                Mengirim...
+                <span
+                  class="spinner-border spinner-border-sm"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
               </button>
             </form>
           </div>
@@ -405,6 +427,31 @@
     </footer>
     <!-- FOOTER END -->
 
+    <!-- STATUS TOATS START -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        data-bs-animation="true"
+        data-bs-delay="3000"
+      >
+        <div class="toast-header bg-info">
+          <strong class="me-auto">Admin &mdash; Adhitya</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body"></div>
+      </div>
+    </div>
+    <!-- STATUS TOATS END -->
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
       integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
@@ -417,13 +464,13 @@
     <script src="assets/js/main.js"></script>
     <script>
       VanillaTilt.init(document.querySelectorAll(".tilt"), {
-        max: 35,
-        speed: 1000,
-        glare: true,
+        max: 25,
+        speed: 5000,
       });
       AOS.init({
         duration: 500,
       });
     </script>
+    <script></script>
   </body>
 </html>
