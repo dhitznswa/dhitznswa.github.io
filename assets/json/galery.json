@@ -2,21 +2,21 @@
   {
     "uniq": "GI-1",
     "url": "assets/img/Galery/backend.PNG",
-    "alt": "Backend"
+    "alt": "Sertifikat Kelulusan Kelas Backend"
   },
   {
     "uniq": "GI-2",
     "url": "assets/img/Galery/frontend.PNG",
-    "alt": "Frontend"
+    "alt": "Sertifikat Kelulusan Kelas Frontend"
   },
   {
     "uniq": "GI-3",
     "url": "assets/img/Galery/jsdasar.PNG",
-    "alt": "JS Dasar"
+    "alt": "Sertifikat Kelulusan Kelas JS Dasar"
   },
   {
     "uniq": "GI-4",
     "url": "assets/img/Galery/pemweb.PNG",
-    "alt": "Pemrograman Web"
+    "alt": "Sertifikat Kelulusan Kelas Pemrograman Web"
   }
 ]

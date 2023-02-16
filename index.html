@@ -23,6 +23,10 @@
     />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css"
+    />
     <!-- My Css -->
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
@@ -184,41 +188,15 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <div class="table-responsive">
-              <table class="table table-striped">
+              <table class="table table-striped" id="skilsTable">
                 <thead>
                   <tr>
-                    <th scope="col">Nomor</th>
+                    <th scope="col" class="text-center">No</th>
                     <th scope="col">Teknologi</th>
                     <th scope="col">Tingkatan</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>HTML, CSS, JavaScript</td>
-                    <td>Medium</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>ReactJS</td>
-                    <td>Low</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>PHP (Laravel)</td>
-                    <td>Medium</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Python</td>
-                    <td>Medium</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>MERN</td>
-                    <td>Medium</td>
-                  </tr>
-                </tbody>
+                <tbody id="boxskils"></tbody>
               </table>
             </div>
           </div>
@@ -409,18 +387,32 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/data.js"></script>
     <script>
+      skils();
       AOS.init({
         duration: 500,
       });
       var typed = new Typed(".hero-text", {
         // Waits 1000ms after typing "First"
-        strings: ["Adhitya Nasuwa", "Freelancer", "Pelajar Aktif"],
+        strings: [
+          "Adhitya Nasuwa",
+          "Programer",
+          "Designer",
+          "Freelancer",
+          "Gamer",
+        ],
         loop: true,
         startAfter: 500,
         typeSpeed: 100,
