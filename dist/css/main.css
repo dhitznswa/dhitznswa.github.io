@@ -674,6 +674,10 @@ video {
   width: 100%;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .max-w-\[90\%\] {
   max-width: 90%;
 }
@@ -688,6 +692,20 @@ video {
 
 .origin-top-left {
   transform-origin: top left;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .flex-wrap {
@@ -769,6 +787,10 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-center {
@@ -1025,6 +1047,34 @@ body {
   color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:text-green-300 {
+  --tw-text-opacity: 1;
+  color: rgb(134 239 172 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-yellow-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 224 71 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .sm\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:order-first {
     order: -9999;
@@ -1040,6 +1090,10 @@ body {
 
   .md\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
   }
 
   .md\:h-\[80vh\] {
