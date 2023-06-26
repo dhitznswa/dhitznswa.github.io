@@ -28,13 +28,13 @@ gsap.from("#nav-project", {
   ease: "back",
 });
 
-gsap.from("#nav-performance", {
-  opacity: 0,
-  y: 100,
-  duration: 2,
-  delay: 1.5,
-  ease: "back",
-});
+// gsap.from("#nav-performance", {
+//   opacity: 0,
+//   y: 100,
+//   duration: 2,
+//   delay: 1.5,
+//   ease: "back",
+// });
 
 gsap.from("#nav-contact", {
   opacity: 0,
@@ -78,13 +78,13 @@ gsap.from("#sm-facebook", {
   delay: 2.5,
   ease: "bounce",
 });
-gsap.from("#sm-twitter", {
-  opacity: 0,
-  y: 100,
-  duration: 1,
-  delay: 2,
-  ease: "bounce",
-});
+// gsap.from("#sm-twitter", {
+//   opacity: 0,
+//   y: 100,
+//   duration: 1,
+//   delay: 2,
+//   ease: "bounce",
+// });
 gsap.from("#sm-instagram", {
   opacity: 0,
   y: 100,
